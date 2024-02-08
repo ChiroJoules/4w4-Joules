@@ -6,16 +6,19 @@
 body{
     display:flex;
     flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .global{
-    min-height: 100vh;
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
 }
 
 .global > section,
 .global > header,
 .global > footer {
-    flex: 0 1 1100px;
+    flex: 0 1 900px;
     border:  1px solid #aaa;
 }
 

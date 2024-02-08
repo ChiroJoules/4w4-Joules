@@ -12,7 +12,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: theme-joules
 */
 :root {
-  --couleur-arriere-entete: #aaa;
+  --couleur-arriere-entete: #420;
   --couleur-arrier-accueil: #0f0;
   --couleur-arriere-evenement: #f00;
   --couleur-arriere-galerie: #045;
@@ -27,16 +27,19 @@ Text Domain: theme-joules
 body {
   display: flex;
   flex-direction: column;
+  font-family: "Open Sans", sans-serif;
 }
 
 .global {
-  min-height: 100vh;
+  min-height: 40vh;
+  display: flex;
+  justify-content: center;
 }
 
 .global > section,
 .global > header,
 .global > footer {
-  flex: 0 1 1100px;
+  flex: 0 1 900px;
   border: 1px solid #aaa;
 }
 
@@ -60,6 +63,11 @@ body {
   background-color: var(--couleur-arriere-footer);
 }
 
+/* https://chrisburnell.com/clamp-calculator/ */
 h1 {
+  font-size: clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
+}
+
+h2 {
   font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
 }/*# sourceMappingURL=style.css.map */
