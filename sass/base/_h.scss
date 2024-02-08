@@ -2,10 +2,12 @@
 
 h1{
     font-size:  clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
+    color: rgba(#2A2B2A, var(--transparence-h1));
 }
 
 h2{
     font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
+    color: rgba(#000, 0.6);
 }
 
 h3{
