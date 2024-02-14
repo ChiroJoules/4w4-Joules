@@ -17,10 +17,10 @@
     --largeur-section: 900px; */
 
     /* Calcul des teintes */
-    --u1: 180; // couleur initiale
+    --u1: 200; // couleur initiale
     --u2: calc(var(--u1) + 180); // couleur complémantaire;
     --u3: calc(var(--u2) - 30); //couleur analogue gauche
-    --u4: calc(var(--u2) + 30); //couleur analogue droite
+    --u4: calc(var(--u1) + 325); //couleur analogue droite
 
     /* La saturation */
     --s-arriere: 100%;

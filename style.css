@@ -29,10 +29,10 @@ Text Domain: theme-joules
 
       --largeur-section: 900px; */
   /* Calcul des teintes */
-  --u1: 180;
+  --u1: 200;
   --u2: calc(var(--u1) + 180);
   --u3: calc(var(--u2) - 30);
-  --u4: calc(var(--u2) + 30);
+  --u4: calc(var(--u1) + 325);
   /* La saturation */
   --s-arriere: 100%;
   --s-avant: 50%;
@@ -87,6 +87,7 @@ body {
 #entete {
   background-color: var(--couleur-arriere-entete);
   color: var(--couleur-entete);
+  position: relative;
 }
 
 #accueil {
@@ -97,6 +98,7 @@ body {
 #evenement {
   background-color: var(--couleur-arriere-evenement);
   color: var(--couleur-evenement);
+  position: relative;
 }
 
 #galerie {
@@ -138,4 +140,25 @@ h5 {
 h6 {
   font-size: clamp(0.625rem, 0.426rem + 0.638vw, 1rem);
   font-weight: 500;
+}
+
+.vague {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.vague svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 90px;
+}
+
+.vague .shape-fill {
+  fill: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */
