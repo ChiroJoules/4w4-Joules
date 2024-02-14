@@ -1,22 +1,15 @@
-# labo #1
-## Introduction à Sass et révision de HTML/CSS
+# labo #2
+## Utilisation de la foction hsl()
+## Integration d'effet vague et diagonal
 
-- Un dossier Sass qui contient:
-    - un sous dossier base
-        - _h.scss
-        - _lien.scss
-    - style.css
-- Création d'une pagination avec flexbox
-- Utilisation de polices google-font
+### Réference utiles
+- référence hsl()
+ - https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hsl
+ - https://css-tricks.com/creating-color-themes-with-custom-properties-hsl-and-a-little-calc/
+ - https://css-tricks.com/hsl-hsla-is-great-for-programmatic-color-control/
 
 ## Ce que vous devez faire
 
-### Ajouter des règles de style Sass pour :
-- Chacun des éléments h
-- Changer les couleurs et la transparence de:
-    - Background-color 
-    - Color
-    - Utiliser la foction rgba()
-- Créer des nouvelles variables :
-    - Largeur de la zone central .global > header, .global > footer, .global > section
-- Utiliser la foctionnalité Clamp()
+### Utiliser la foction hsl:
+### Intégrer le vagues
+### Intégrer une diagonal
