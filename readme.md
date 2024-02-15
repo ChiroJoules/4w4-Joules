@@ -13,3 +13,6 @@
 ### Utiliser la foction hsl:
 ### Intégrer le vagues
 ### Intégrer une diagonal
+
+## Labo 2 fini
+https://chirojoules.github.io/4w4-Joules/
