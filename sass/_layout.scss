@@ -28,6 +28,7 @@ body{
 #entete, #footer{
     min-height: 20vh;
 }
+
 #entete{
     background-color: var(--couleur-arriere-entete);
     color: var(--couleur-entete);
@@ -42,12 +43,12 @@ body{
 #evenement{
     background-color: var(--couleur-arriere-evenement);
     color: var(--couleur-evenement);
-    position: relative;
 }
 
 #galerie{
     background-color: var(--couleur-arriere-galerie);
     color: var(--couleur-galerie);
+    position: relative;
 }
 
 #footer{

@@ -29,7 +29,7 @@ Text Domain: theme-joules
 
       --largeur-section: 900px; */
   /* Calcul des teintes */
-  --u1: 200;
+  --u1: 230;
   --u2: calc(var(--u1) + 180);
   --u3: calc(var(--u2) - 30);
   --u4: calc(var(--u1) + 325);
@@ -40,17 +40,24 @@ Text Domain: theme-joules
   --l-arriere: 30%;
   --l-avant: 20%;
   /* couleur arrière plan - background-color */
-  --couleur-arriere-entete: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
-  --couleur-arriere-accueil: hsl(var(--u2), var(--s-arriere), var(--l-arriere));
-  --couleur-arriere-evenement: hsl(var(--u3), var(--s-arriere), var(--l-arriere));
-  --couleur-arriere-galerie: hsl(var(--u4), var(--s-arriere), var(--l-arriere));
-  --couleur-arriere-footer: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
+  /*  --couleur-arriere-entete: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
+      --couleur-arriere-accueil: hsl(var(--u2), var(--s-arriere), var(--l-arriere));
+      --couleur-arriere-evenement: hsl(var(--u3), var(--s-arriere), var(--l-arriere));
+      --couleur-arriere-galerie: hsl(var(--u4), var(--s-arriere), var(--l-arriere));
+      --couleur-arriere-footer: hsl(var(--u1), var(--s-arriere), var(--l-arriere)); */
   /* couleur avant plan */
-  --couleur-entete: hsl(var(--u1), var(--s-avant), var(--l-avant));
-  --couleur-accueil: hsl(var(--u2), var(--s-avant), var(--l-avant));
-  --couleur-evenement: hsl(var(--u3), var(--s-avant), var(--l-avant));
-  --couleur-galerie: hsl(var(--u4), var(--s-avant), var(--l-avant));
-  --couleur-footer: hsl(var(--u1), var(--s-avant), var(--l-avant));
+  --couleur-entete: hsl(var(--u1), 100%, 40%);
+  --couleur-accueil: hsl(var(--u1), 100%, 30%);
+  --couleur-evenement: hsl(var(--u1), 100%, 30%);
+  --couleur-galerie: hsl(var(--u1), 100%, 30%);
+  --couleur-footer: hsl(var(--u1), 100%, 30%);
+  /* Couleur monochrome */
+  --couleur-arriere-entete: hsl(var(--u1), 100%, 85%);
+  --couleur-arriere-accueil: hsl(var(--u1), 100%, 80%);
+  --couleur-arriere-footer: hsl(var(--u1), 100%, 65%);
+  /* Pour que le diagonal soit entièrement visible */
+  --couleur-arriere-galerie: var(--couleur-arriere-accueil);
+  --couleur-arriere-evenement: var(--couleur-arriere-accueil);
 }
 
 * {
@@ -98,12 +105,12 @@ body {
 #evenement {
   background-color: var(--couleur-arriere-evenement);
   color: var(--couleur-evenement);
-  position: relative;
 }
 
 #galerie {
   background-color: var(--couleur-arriere-galerie);
   color: var(--couleur-galerie);
+  position: relative;
 }
 
 #footer {
@@ -161,4 +168,23 @@ h6 {
 
 .vague .shape-fill {
   fill: #FFFFFF;
+}
+
+.diagonal {
+  position: relative;
+  isolation: isolate;
+  z-index: 1;
+}
+
+.diagonal::after {
+  position: absolute;
+  content: "";
+  /*    left: 0;
+     right: 0;
+     top: 0;
+     bottom: 0; */
+  inset: 0;
+  background-color: whitesmoke;
+  transform: skewY(-5deg);
+  z-index: -1;
 }/*# sourceMappingURL=style.css.map */
