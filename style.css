@@ -29,10 +29,10 @@ Text Domain: theme-joules
 
       --largeur-section: 900px; */
   /* Calcul des teintes */
-  --u1: 230;
+  --u1: 190;
   --u2: calc(var(--u1) + 180);
   --u3: calc(var(--u2) - 30);
-  --u4: calc(var(--u1) + 325);
+  --u4: calc(var(--u1) + 30);
   /* La saturation */
   --s-arriere: 100%;
   --s-avant: 50%;
@@ -46,18 +46,22 @@ Text Domain: theme-joules
       --couleur-arriere-galerie: hsl(var(--u4), var(--s-arriere), var(--l-arriere));
       --couleur-arriere-footer: hsl(var(--u1), var(--s-arriere), var(--l-arriere)); */
   /* couleur avant plan */
-  --couleur-entete: hsl(var(--u1), 100%, 40%);
-  --couleur-accueil: hsl(var(--u1), 100%, 30%);
-  --couleur-evenement: hsl(var(--u1), 100%, 30%);
-  --couleur-galerie: hsl(var(--u1), 100%, 30%);
-  --couleur-footer: hsl(var(--u1), 100%, 30%);
+  --couleur-entete: hsl(var(--u1), 70%, 95%);
+  --couleur-accueil: hsl(var(--u1), 70%, 95%);
+  --couleur-evenement: hsl(var(--u1), 70%, 95%);
+  --couleur-galerie: hsl(var(--u1), 70%, 95%);
+  --couleur-footer: hsl(var(--u1), 70%, 95%);
+  --couleur-lien: hsl(var(--u2), 90%, 60%);
+  --couleur-bouton: hsl(var(--u1), 70%, 95%);
   /* Couleur monochrome */
-  --couleur-arriere-entete: hsl(var(--u1), 100%, 85%);
-  --couleur-arriere-accueil: hsl(var(--u1), 100%, 80%);
-  --couleur-arriere-footer: hsl(var(--u1), 100%, 65%);
+  --couleur-arriere-entete: hsl(var(--u1), 98%, 19%);
+  --couleur-arriere-accueil: hsl(var(--u1), 89%, 29%);
+  --couleur-arriere-footer: hsl(var(--u1), 100%, 42%);
   /* Pour que le diagonal soit entièrement visible */
   --couleur-arriere-galerie: var(--couleur-arriere-accueil);
   --couleur-arriere-evenement: var(--couleur-arriere-accueil);
+  --couleur-arriere-diagonal: hsl(var(--u1), 81%, 36%);
+  --couleur-arriere-bouton: hsl(var(--u2), 90%, 60%);
 }
 
 * {
@@ -80,10 +84,9 @@ body {
 .global > section,
 .global > header,
 .global > footer {
-  flex: 0 1 var(--largeur-section);
+  flex: 0 1 900px;
   /*     border:  1px solid #aaa; */
-  padding: 3rem 1rem;
-  background-color: rgba(119, 51, 68, var(--transparence-section));
+  padding: 4.5rem 1rem;
   /*     background-color: rgba(0,0,0, 0.1); */
 }
 
@@ -122,31 +125,69 @@ body {
 h1 {
   font-size: clamp(2.5rem, 1.702rem + 2.553vw, 4rem);
   font-weight: 800;
+  text-shadow: 7px 0px black;
 }
 
 h2 {
   font-size: clamp(1.5rem, 0.702rem + 2.553vw, 3rem);
   font-weight: 700;
+  margin: 1.2rem 0;
 }
 
 h3 {
   font-size: clamp(1.125rem, 0.527rem + 1.915vw, 2.25rem);
   font-weight: 600;
+  margin: 1.1rem 0;
 }
 
 h4 {
   font-size: clamp(1rem, 0.668rem + 1.064vw, 1.625rem);
   font-weight: 500;
+  margin: 1rem 0;
 }
 
 h5 {
   font-size: clamp(0.813rem, 0.646rem + 0.532vw, 1.125rem);
   font-weight: 500;
+  margin: 0.9rem 0;
 }
 
 h6 {
   font-size: clamp(0.625rem, 0.426rem + 0.638vw, 1rem);
   font-weight: 500;
+  margin: 0.7rem 0;
+}
+
+p {
+  font-size: clamp(0.75rem, 0.375rem + 1.2vw, 1.125rem);
+  margin: 0.5rem 0;
+  line-height: 1.5rem;
+}
+
+a {
+  color: var(--couleur-lien);
+}
+
+a:hover {
+  color: var(--u4);
+}
+
+button {
+  margin: 2rem 0rem;
+  padding: 1rem 2.5rem;
+  border-radius: 25px;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--couleur-arriere-bouton);
+  color: var(--couleur-bouton);
+  font-weight: bold;
+  border: 2px white solid;
+}
+
+button:hover {
+  border: 2px var(--couleur-arriere-bouton) solid;
+  background-color: white;
+  color: var(--couleur-arriere-bouton);
 }
 
 .vague {
@@ -184,7 +225,8 @@ h6 {
      top: 0;
      bottom: 0; */
   inset: 0;
-  background-color: whitesmoke;
+  background-color: var(--couleur-arriere-diagonal);
   transform: skewY(-5deg);
   z-index: -1;
+  box-shadow: 1px 25px 30px var(--couleur-arriere-footer);
 }/*# sourceMappingURL=style.css.map */

@@ -17,10 +17,10 @@
     --largeur-section: 900px; */
 
     /* Calcul des teintes */
-    --u1: 230; // couleur initiale
+    --u1: 190; // couleur initiale
     --u2: calc(var(--u1) + 180); // couleur complémantaire;
     --u3: calc(var(--u2) - 30); //couleur analogue gauche
-    --u4: calc(var(--u1) + 325); //couleur analogue droite
+    --u4: calc(var(--u1) + 30); //couleur analogue droite
 
     /* La saturation */
     --s-arriere: 100%;
@@ -39,21 +39,24 @@
     --couleur-arriere-footer: hsl(var(--u1), var(--s-arriere), var(--l-arriere)); */
 
     /* couleur avant plan */
-    --couleur-entete: hsl(var(--u1), 100%, 40%);
-    --couleur-accueil: hsl(var(--u1), 100%, 30%);
-    --couleur-evenement: hsl(var(--u1), 100%, 30%);
-    --couleur-galerie: hsl(var(--u1), 100%, 30%);
-    --couleur-footer: hsl(var(--u1), 100%, 30%);
+    --couleur-entete: hsl(var(--u1), 70%, 95%);
+    --couleur-accueil: hsl(var(--u1), 70%, 95%);
+    --couleur-evenement: hsl(var(--u1), 70%, 95%);
+    --couleur-galerie: hsl(var(--u1), 70%, 95%);
+    --couleur-footer: hsl(var(--u1), 70%, 95%);
+    --couleur-lien: hsl(var(--u2), 90%, 60%);
+    --couleur-bouton: hsl(var(--u1), 70%, 95%);
+
 
     /* Couleur monochrome */
-    --couleur-arriere-entete: hsl(var(--u1), 100%, 85%);
-    --couleur-arriere-accueil: hsl(var(--u1), 100%, 80%);
-    //--couleur-arriere-evenement: hsl(var(--u1), 100%, 75%);
-    //--couleur-arriere-galerie: hsl(var(--u1), 100%, 70%);
-    --couleur-arriere-footer: hsl(var(--u1), 100%, 65%);
+    --couleur-arriere-entete: hsl(var(--u1), 98%, 19%);
+    --couleur-arriere-accueil: hsl(var(--u1), 89%, 29%);
+    --couleur-arriere-footer: hsl(var(--u1), 100%, 42%);
     
     /* Pour que le diagonal soit entièrement visible */
     --couleur-arriere-galerie: var(--couleur-arriere-accueil);
     --couleur-arriere-evenement: var(--couleur-arriere-accueil);
+    --couleur-arriere-diagonal: hsl(var(--u1), 81%, 36%);
+    --couleur-arriere-bouton: hsl(var(--u2), 90%, 60%);
     
 }
