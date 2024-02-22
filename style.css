@@ -46,11 +46,8 @@ Text Domain: theme-joules
       --couleur-arriere-galerie: hsl(var(--u4), var(--s-arriere), var(--l-arriere));
       --couleur-arriere-footer: hsl(var(--u1), var(--s-arriere), var(--l-arriere)); */
   /* couleur avant plan */
-  --couleur-entete: hsl(var(--u1), 70%, 95%);
-  --couleur-accueil: hsl(var(--u1), 70%, 95%);
-  --couleur-evenement: hsl(var(--u1), 70%, 95%);
-  --couleur-galerie: hsl(var(--u1), 70%, 95%);
-  --couleur-footer: hsl(var(--u1), 70%, 95%);
+  --couleur-theme: hsl(var(--u1), 70%, 95%);
+  --couleur-footer: hsl(var(--u1), 85%, 10%);
   --couleur-lien: hsl(var(--u2), 90%, 60%);
   --couleur-bouton: hsl(var(--u1), 70%, 95%);
   /* Couleur monochrome */
@@ -90,29 +87,34 @@ body {
   /*     background-color: rgba(0,0,0, 0.1); */
 }
 
+.global > header {
+  flex: 1;
+}
+
 #entete, #footer {
   min-height: 20vh;
 }
 
 #entete {
   background-color: var(--couleur-arriere-entete);
-  color: var(--couleur-entete);
+  color: var(--couleur-theme);
   position: relative;
+  min-height: 100vh;
 }
 
 #accueil {
   background-color: var(--couleur-arriere-accueil);
-  color: var(--couleur-accueil);
+  color: var(--couleur-theme);
 }
 
 #evenement {
   background-color: var(--couleur-arriere-evenement);
-  color: var(--couleur-evenement);
+  color: var(--couleur-theme);
 }
 
 #galerie {
   background-color: var(--couleur-arriere-galerie);
-  color: var(--couleur-galerie);
+  color: var(--couleur-theme);
   position: relative;
 }
 
@@ -121,9 +123,15 @@ body {
   color: var(--couleur-footer);
 }
 
+.entete__header {
+  background-image: url("images/wordpress-theme.png");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+
 /* https://chrisburnell.com/clamp-calculator/ */
 h1 {
-  font-size: clamp(2.5rem, 1.702rem + 2.553vw, 4rem);
+  font-size: clamp(1.5rem, -1rem + 8vw, 4.5rem);
   font-weight: 800;
   text-shadow: 7px 0px black;
 }
@@ -172,9 +180,13 @@ a:hover {
   color: var(--u4);
 }
 
+span {
+  display: block;
+}
+
 button {
   margin: 2rem 0rem;
-  padding: 1rem 2.5rem;
+  padding: 1rem 2rem;
   border-radius: 25px;
   text-align: center;
   text-decoration: none;
@@ -182,6 +194,7 @@ button {
   color: var(--couleur-bouton);
   font-weight: bold;
   border: 2px white solid;
+  font-size: clamp(1.125rem, 1.021rem + 0.333vw, 1.25rem);
 }
 
 button:hover {

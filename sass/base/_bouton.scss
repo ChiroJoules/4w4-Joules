@@ -1,0 +1,18 @@
+button{
+    margin: 2rem 0rem;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--couleur-arriere-bouton);
+    color: var(--couleur-bouton);
+    font-weight: bold;
+    border: 2px white solid;
+    font-size: clamp(1.125rem, 1.021rem + 0.333vw, 1.25rem);
+}
+
+button:hover{
+    border: 2px var(--couleur-arriere-bouton) solid;
+    background-color: white;
+    color: var(--couleur-arriere-bouton);
+}

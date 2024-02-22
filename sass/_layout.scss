@@ -24,29 +24,34 @@ body{
 /*     background-color: rgba(0,0,0, 0.1); */
 }
 
+.global > header{
+    flex: 1;
+}
+
 #entete, #footer{
     min-height: 20vh;
 }
 
 #entete{
     background-color: var(--couleur-arriere-entete);
-    color: var(--couleur-entete);
+    color: var(--couleur-theme);
     position: relative;
+    min-height: 100vh;
 }
 
 #accueil{
     background-color: var(--couleur-arriere-accueil);
-    color: var(--couleur-accueil);
+    color: var(--couleur-theme);
 }
 
 #evenement{
     background-color: var(--couleur-arriere-evenement);
-    color: var(--couleur-evenement);
+    color: var(--couleur-theme);
 }
 
 #galerie{
     background-color: var(--couleur-arriere-galerie);
-    color: var(--couleur-galerie);
+    color: var(--couleur-theme);
     position: relative;
 }
 
