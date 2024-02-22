@@ -49,6 +49,8 @@ Text Domain: theme-joules
   --couleur-theme: hsl(var(--u1), 70%, 95%);
   --couleur-footer: hsl(var(--u1), 85%, 10%);
   --couleur-lien: hsl(var(--u2), 90%, 60%);
+  --couleur-lien-hover: hsl(var(--u2), 50%, 80%);
+  --couleur-lien-visited: hsl(var(--u2), 60%, 60%);
   --couleur-bouton: hsl(var(--u1), 70%, 95%);
   /* Couleur monochrome */
   --couleur-arriere-entete: hsl(var(--u1), 98%, 19%);
@@ -88,7 +90,7 @@ body {
 }
 
 .global > header {
-  flex: 0.8;
+  flex: 0.9;
 }
 
 #entete, #footer {
@@ -123,12 +125,26 @@ body {
   color: var(--couleur-footer);
 }
 
+@media only screen and (max-width: 600px) {
+  .global > header {
+    color: var(--couleur-footer);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .entete__header {
   background-image: url("images/wordpress-theme.png");
   background-repeat: no-repeat;
   background-position: 100% 30%;
 }
 
+@media only screen and (max-width: 600px) {
+  .entete__header {
+    background-position: 50% 30%;
+  }
+}
 /* https://chrisburnell.com/clamp-calculator/ */
 h1 {
   font-size: clamp(1.125rem, -0.75rem + 6vw, 3.375rem);
@@ -202,10 +218,19 @@ button:hover {
 
 a {
   color: var(--couleur-lien);
+  transition: all 0.5s;
 }
 
 a:hover {
-  color: var(--u4);
+  background-color: var(--couleur-lien-hover);
+}
+
+a:focus {
+  transform: scale(110%);
+}
+
+a:visited {
+  color: var(--couleur-lien-visited);
 }
 
 .vague {
