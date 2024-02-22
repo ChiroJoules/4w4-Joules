@@ -88,7 +88,7 @@ body {
 }
 
 .global > header {
-  flex: 1;
+  flex: 0.8;
 }
 
 #entete, #footer {
@@ -99,7 +99,7 @@ body {
   background-color: var(--couleur-arriere-entete);
   color: var(--couleur-theme);
   position: relative;
-  min-height: 100vh;
+  min-height: 70vh;
 }
 
 #accueil {
@@ -126,42 +126,41 @@ body {
 .entete__header {
   background-image: url("images/wordpress-theme.png");
   background-repeat: no-repeat;
-  background-position: 100% 50%;
+  background-position: 100% 30%;
 }
 
 /* https://chrisburnell.com/clamp-calculator/ */
 h1 {
-  font-size: clamp(1.5rem, -1rem + 8vw, 4.5rem);
+  font-size: clamp(1.125rem, -0.75rem + 6vw, 3.375rem);
   font-weight: 800;
-  text-shadow: 7px 0px black;
 }
 
 h2 {
-  font-size: clamp(1.5rem, 0.702rem + 2.553vw, 3rem);
+  font-size: clamp(1.125rem, 0.188rem + 3vw, 2.25rem);
   font-weight: 700;
   margin: 1.2rem 0;
 }
 
 h3 {
-  font-size: clamp(1.125rem, 0.527rem + 1.915vw, 2.25rem);
+  font-size: clamp(1.125rem, 0.708rem + 1.333vw, 1.625rem);
   font-weight: 600;
   margin: 1.1rem 0;
 }
 
 h4 {
-  font-size: clamp(1rem, 0.668rem + 1.064vw, 1.625rem);
+  font-size: clamp(1.125rem, 0.917rem + 0.667vw, 1.375rem);
   font-weight: 500;
   margin: 1rem 0;
 }
 
 h5 {
-  font-size: clamp(0.813rem, 0.646rem + 0.532vw, 1.125rem);
+  font-size: clamp(1.125rem, 1.021rem + 0.333vw, 1.25rem);
   font-weight: 500;
   margin: 0.9rem 0;
 }
 
 h6 {
-  font-size: clamp(0.625rem, 0.426rem + 0.638vw, 1rem);
+  font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
   font-weight: 500;
   margin: 0.7rem 0;
 }
@@ -172,22 +171,14 @@ p {
   line-height: 1.5rem;
 }
 
-a {
-  color: var(--couleur-lien);
-}
-
-a:hover {
-  color: var(--u4);
-}
-
 span {
   display: block;
 }
 
 button {
   margin: 2rem 0rem;
-  padding: 1rem 2rem;
-  border-radius: 25px;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
   text-align: center;
   text-decoration: none;
   background-color: var(--couleur-arriere-bouton);
@@ -195,12 +186,26 @@ button {
   font-weight: bold;
   border: 2px white solid;
   font-size: clamp(1.125rem, 1.021rem + 0.333vw, 1.25rem);
+  transition: transform 0.5s, background-color 0.2s, box-shadow 0.5s;
+}
+
+button:active {
+  box-shadow: inset 0px 5px 30px -5px var(--couleur-arriere-bouton);
 }
 
 button:hover {
   border: 2px var(--couleur-arriere-bouton) solid;
   background-color: white;
   color: var(--couleur-arriere-bouton);
+  transform: scale(105%);
+}
+
+a {
+  color: var(--couleur-lien);
+}
+
+a:hover {
+  color: var(--u4);
 }
 
 .vague {

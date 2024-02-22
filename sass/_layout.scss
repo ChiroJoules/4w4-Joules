@@ -25,7 +25,7 @@ body{
 }
 
 .global > header{
-    flex: 1;
+    flex: 0.8;
 }
 
 #entete, #footer{
@@ -36,7 +36,7 @@ body{
     background-color: var(--couleur-arriere-entete);
     color: var(--couleur-theme);
     position: relative;
-    min-height: 100vh;
+    min-height: 70vh;
 }
 
 #accueil{
