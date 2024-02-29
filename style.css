@@ -1,8 +1,6 @@
 @charset "UTF-8";
-/* https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/ */
 /*
 Theme Name: Theme Joules
-Theme URI: https://wordpress.org/themes/twentytwenty/
 Author: Julian Ibanez
 Author URI: https://wordpress.org/
 Description: Theme de base développé dans le cours 4W4
@@ -11,6 +9,7 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: theme-joules
 */
+/* https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/ */
 :root {
   /*     --couleur-arriere-entete: #F08700;
       --couleur-arrier-accueil: #F49F0A;
@@ -272,4 +271,19 @@ a:visited {
   transform: skewY(-5deg);
   z-index: -1;
   box-shadow: 1px 25px 30px var(--couleur-arriere-footer);
+}
+
+.cours {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.carte {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 1 20%;
+  border: 1px solid #aaa;
 }/*# sourceMappingURL=style.css.map */
