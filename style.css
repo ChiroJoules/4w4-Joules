@@ -159,25 +159,21 @@ h2 {
 h3 {
   font-size: clamp(1.125rem, 0.708rem + 1.333vw, 1.625rem);
   font-weight: 600;
-  margin: 1.1rem 0;
 }
 
 h4 {
   font-size: clamp(1.125rem, 0.917rem + 0.667vw, 1.375rem);
   font-weight: 500;
-  margin: 1rem 0;
 }
 
 h5 {
   font-size: clamp(1.125rem, 1.021rem + 0.333vw, 1.25rem);
   font-weight: 500;
-  margin: 0.9rem 0;
 }
 
 h6 {
   font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
   font-weight: 500;
-  margin: 0.7rem 0;
 }
 
 p {
@@ -283,7 +279,20 @@ a:visited {
 .carte {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex: 0 1 20%;
-  border: 1px solid #aaa;
+  border: 0.15rem solid var(--couleur-theme);
+  text-align: center;
+  align-items: center;
+  padding: 0.9rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .cours {
+    gap: 0.5rem;
+  }
+  .carte {
+    flex: 0 1 45%;
+    padding: 0.2rem;
+  }
 }/*# sourceMappingURL=style.css.map */
