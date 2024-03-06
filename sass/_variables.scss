@@ -57,5 +57,9 @@
     --couleur-arriere-evenement: var(--couleur-arriere-accueil);
     --couleur-arriere-diagonal: hsl(var(--u1), 81%, 36%);
     --couleur-arriere-bouton: hsl(var(--u2), 90%, 60%);
+
+    .carte{
+        --couleur-arriere: hsl(var(--u1),100%, 40%);
+    }
     
 }

@@ -8,24 +8,11 @@
 .carte{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    flex: 0 1 20%;
-    border: 0.15rem solid var(--couleur-theme);
+    justify-content: center;
+    flex: 1 0 calc(900px/5);
+    border: 1px solid var(--couleur-theme);
     text-align: center;
     align-items: center;
-    padding: 0.9rem;
-}
-
-
-@media only screen and (max-width: 600px){
-
-    .cours{
-        gap: 0.5rem;
-    }
-
-    .carte{
-        flex: 0 1 45%;
-        padding: 0.2rem;
-    }
-
+    background-color: var(--couleur-arriere);
+    padding: 1rem;
 }
