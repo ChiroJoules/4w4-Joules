@@ -10,7 +10,6 @@ body{
 }
 
 .global{
-    min-height: 40vh;
     display: flex;
     justify-content: center;
 }
@@ -18,14 +17,14 @@ body{
 .global > section,
 .global > header,
 .global > footer {
-    flex: 0 1 900px;
+    flex: 0 1 1100px;
 /*     border:  1px solid #aaa; */
-    padding: 4.5rem 1rem;
+    padding: 4rem 1rem;
 /*     background-color: rgba(0,0,0, 0.1); */
 }
 
-.global > header{
-    flex: 0.9;
+.global > .entete__header{
+    flex: 1;
 }
 
 #entete, #footer{
@@ -60,7 +59,7 @@ body{
     color: var(--couleur-footer);
 }
 
-@media only screen and (max-width: 600px){
+/* @media only screen and (max-width: 600px){
 
     .global > header{
         color: var(--couleur-footer);
@@ -70,4 +69,4 @@ body{
         align-items: center;
     }
 
-}
+} */

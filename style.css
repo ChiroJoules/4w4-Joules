@@ -77,7 +77,6 @@ body {
 }
 
 .global {
-  min-height: 40vh;
   display: flex;
   justify-content: center;
 }
@@ -85,14 +84,14 @@ body {
 .global > section,
 .global > header,
 .global > footer {
-  flex: 0 1 900px;
+  flex: 0 1 1100px;
   /*     border:  1px solid #aaa; */
-  padding: 4.5rem 1rem;
+  padding: 4rem 1rem;
   /*     background-color: rgba(0,0,0, 0.1); */
 }
 
-.global > header {
-  flex: 0.9;
+.global > .entete__header {
+  flex: 1;
 }
 
 #entete, #footer {
@@ -127,26 +126,23 @@ body {
   color: var(--couleur-footer);
 }
 
-@media only screen and (max-width: 600px) {
-  .global > header {
-    color: var(--couleur-footer);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
+/* @media only screen and (max-width: 600px){
+
+    .global > header{
+        color: var(--couleur-footer);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+} */
 .entete__header {
-  background-image: url("images/wordpress-theme.png");
+  background-image: url("images/wordpress-theme.png") !important;
   background-repeat: no-repeat;
   background-position: 100% 30%;
 }
 
-@media only screen and (max-width: 600px) {
-  .entete__header {
-    background-position: 50% 30%;
-  }
-}
 /* https://chrisburnell.com/clamp-calculator/ */
 h1 {
   font-size: clamp(1.5rem, -2.656rem + 12.5vw, 4.375rem);
@@ -266,6 +262,9 @@ a:visited {
   box-shadow: 1px 25px 30px var(--couleur-arriere-footer);
 }
 
+/* ////////////////////////////////////////////// */
+/* Composants */
+/* ////////////////////////////////////////////// */
 .cours {
   display: flex;
   flex-wrap: wrap;
@@ -283,4 +282,30 @@ a:visited {
   align-items: center;
   background-color: var(--couleur-arriere);
   padding: 1rem;
+}
+
+/* <nav class="menu-principal-container"><ul id="menu-principal" class="menu"><li id="menu-item-34" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34"><a href="#accueil">Accueil</a></li>
+<li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-31"><a href="http://localhost:8080/4w4_joules/2020/10/07/582-6n3-stage-285h/">Stage</a></li>
+<li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-32"><a href="http://localhost:8080/4w4_joules/2020/10/07/582-4mb-animation-3d-75h/">Animation 3D</a></li>
+<li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-33"><a href="http://localhost:8080/4w4_joules/2020/10/07/360-4j4-creation-de-jeu-en-equipe-105h/">Création de jeu en équipe</a></li>
+<li id="menu-item-35" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35"><a href="#footer">Footer</a></li>
+</ul></nav> */
+/*  
+Feuille de style du menu principal
+*/
+.menu-principal-container {
+  background-color: black;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+}
+
+.menu-item {
+  flex: 0 0 50px;
+}
+
+.menu-item a {
+  color: aliceblue;
 }/*# sourceMappingURL=style.css.map */
