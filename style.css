@@ -300,10 +300,14 @@ Feuille de style du menu principal
 .menu {
   display: flex;
   list-style-type: none;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .menu-item {
-  flex: 0 0 50px;
+  flex: 0 0 200px;
+  display: flex;
+  justify-content: center;
 }
 
 .menu-item a {
