@@ -31,11 +31,16 @@ body{
     min-height: 20vh;
 }
 
+#menu__entete{
+    position : relative;
+    background-color: var(--couleur-arriere-menu);
+}
+
 #entete{
     background-color: var(--couleur-arriere-entete);
     color: var(--couleur-theme);
     position: relative;
-    min-height: 70vh;
+    min-height: 100vh;
 }
 
 #accueil{
@@ -46,6 +51,7 @@ body{
 #evenement{
     background-color: var(--couleur-arriere-evenement);
     color: var(--couleur-theme);
+    z-index: 1;
 }
 
 #galerie{

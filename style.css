@@ -52,6 +52,7 @@ Text Domain: theme-joules
   --couleur-lien-visited: hsl(var(--u2), 60%, 60%);
   --couleur-bouton: hsl(var(--u1), 70%, 95%);
   /* Couleur monochrome */
+  --couleur-arriere-menu: hsl(var(--u1), 100%, 30% );
   --couleur-arriere-entete: hsl(var(--u1), 98%, 19%);
   --couleur-arriere-accueil: hsl(var(--u1), 89%, 29%);
   --couleur-arriere-footer: hsl(var(--u1), 100%, 42%);
@@ -63,6 +64,12 @@ Text Domain: theme-joules
 }
 :root .carte {
   --couleur-arriere: hsl(var(--u1),100%, 40%);
+}
+:root #entete {
+  --_couleur-arriere-vague: var(--couleur-arriere-accueil);
+}
+:root #galerie {
+  --_couleur-arriere-vague: var(--couleur-arriere-footer);
 }
 
 * {
@@ -98,11 +105,16 @@ body {
   min-height: 20vh;
 }
 
+#menu__entete {
+  position: relative;
+  background-color: var(--couleur-arriere-menu);
+}
+
 #entete {
   background-color: var(--couleur-arriere-entete);
   color: var(--couleur-theme);
   position: relative;
-  min-height: 70vh;
+  min-height: 100vh;
 }
 
 #accueil {
@@ -113,6 +125,7 @@ body {
 #evenement {
   background-color: var(--couleur-arriere-evenement);
   color: var(--couleur-theme);
+  z-index: 1;
 }
 
 #galerie {
@@ -238,8 +251,8 @@ a:visited {
   height: 90px;
 }
 
-.vague .shape-fill {
-  fill: #FFFFFF;
+.vague .remplissage {
+  fill: var(--_couleur-arriere-vague);
 }
 
 .diagonal {

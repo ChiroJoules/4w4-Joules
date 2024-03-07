@@ -48,6 +48,7 @@
 
 
     /* Couleur monochrome */
+    --couleur-arriere-menu: hsl(var(--u1), 100%, 30% );
     --couleur-arriere-entete: hsl(var(--u1), 98%, 19%);
     --couleur-arriere-accueil: hsl(var(--u1), 89%, 29%);
     --couleur-arriere-footer: hsl(var(--u1), 100%, 42%);
@@ -62,4 +63,12 @@
         --couleur-arriere: hsl(var(--u1),100%, 40%);
     }
     
+    #entete {
+        --_couleur-arriere-vague : var(--couleur-arriere-accueil);
+    }
+    
+    #galerie{
+        --_couleur-arriere-vague : var(--couleur-arriere-footer);
+    }
+
 }
