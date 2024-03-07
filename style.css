@@ -306,23 +306,63 @@ a:visited {
 /*  
 Feuille de style du menu principal
 */
-.menu-principal-container {
-  background-color: black;
-}
-
+/* .menu-principal-container { //nav
+    //background-color: black;
+} */
 .menu {
+  position: fixed;
   display: flex;
+  gap: 0.5rem;
+  width: 100vw;
+  right: 0;
+  z-index: 1;
   list-style-type: none;
-  align-items: center;
-  justify-content: space-evenly;
+  flex-direction: column;
+  transform: translateX(300%);
+  transition: transform 0.5s;
+  background-color: var(--couleur-arriere-menu);
+}
+@media (min-width: 700px) {
+  .menu {
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    transform: translateX(0);
+  }
 }
 
 .menu-item {
-  flex: 0 0 200px;
+  flex: 0 1 150px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 0.2rem var(--couleur-theme) solid;
 }
 
 .menu-item a {
   color: aliceblue;
+  text-decoration: none;
+}
+
+/* gestion label #burger l'image svg est dans un label */
+#burger {
+  display: block;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1;
+}
+@media (min-width: 700px) {
+  #burger {
+    display: none;
+  }
+}
+
+#chk-burger {
+  display: none;
+}
+
+#chk-burger:checked ~ .menu__header .menu {
+  transform: translateX(0);
 }/*# sourceMappingURL=style.css.map */
