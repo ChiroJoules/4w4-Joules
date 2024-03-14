@@ -1,6 +1,5 @@
 <?php get_header() ?>
 
-<h1>FRONT PAGE</h1>
 <div id="entete" class="global">
     <header class="entete__header">
         <h1><?= get_bloginfo("name") ?></h1>
