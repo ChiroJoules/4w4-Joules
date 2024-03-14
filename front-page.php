@@ -3,10 +3,10 @@
 <h1>FRONT PAGE</h1>
 <div id="entete" class="global">
     <header class="entete__header">
-        <h1>Thème Joules (h1)</h1>
-        <h2>4w4-Conception d'interface <span>et développement Web</span></h2>
+        <h1><?= get_bloginfo("name") ?></h1>
+        <h2><?= get_bloginfo("description") ?></h2>
         <h3>TIM-Collège de Maisonneuve</h3>
-        <button>Événement</button>
+        <button>Événements</button>
     </header>
     <div class="vague">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -18,24 +18,12 @@
     <section>
         <h2>Accueil (h2)</h2>
         <div class="cours">
-            <?php
-                /*if(have_posts()){
-                    while(have_posts()){
-                        the_post();
-                        the_title("<h3>" , "</h3>");
-                        echo wp_trim_words(get_the_content(), 30);
-                    }
-                } */
-
-                if(have_posts()):
-                    
-                    while(have_posts()): the_post();
-                    $titre = get_the_title();
-
-                    ?>
+            <?php if(have_posts()):
+                while(have_posts()): the_post(); ?>
                     <div class="carte">
-                        <h5><?= $titre; ?></h5>
+                        <h5><?= get_the_title() ?></h5>
                         <p><?= wp_trim_words(get_the_content(), 10); ?></p>
+                        <a href="<?php the_permalink(); ?>">Voir l'article -></a>
                     </div>
                     <?php endwhile; ?> 
                 <?php endif; ?>     
@@ -56,11 +44,4 @@
     </section>
     <?php get_template_part('gabarits/vague.php'); ?>
 </div>
-<div id="footer" class="global">
-    <section>
-        <h2>Footer</h2>
-        <p>Mauris augue neque gravida in fermentum et sollicitudin ac orci. Aenean euismod elementum nisi quis eleifend quam. Sem fringilla ut morbi tincidunt augue interdum velit euismod. Nisl suscipit adipiscing bibendum est ultricies integer quis auctor elit. Urna duis convallis convallis tellus id interdum velit laoreet id. Ut ornare lectus sit amet est. Interdum varius sit amet mattis. Adipiscing bibendum est ultricies integer. Sit amet massa vitae tortor condimentum lacinia quis vel eros. Pulvinar elementum integer enim neque volutpat ac tincidunt. Penatibus et magnis dis parturient montes nascetur. Sed cras ornare arcu dui vivamus arcu felis. Elementum curabitur vitae nunc sed velit dignissim sodales ut. Sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Odio ut enim blandit volutpat maecenas. Vulputate ut pharetra sit amet aliquam id diam. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus. Ultrices tincidunt arcu non sodales neque sodales ut.</p>
-    </section>
-</div>
-</body>
-</html>
+<?php get_footer(); ?>

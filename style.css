@@ -108,6 +108,9 @@ body {
 #menu__entete {
   position: relative;
   background-color: var(--couleur-arriere-menu);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 #entete {
@@ -365,4 +368,10 @@ Feuille de style du menu principal
 
 #chk-burger:checked ~ .menu__header .menu {
   transform: translateX(0);
+}
+
+.custom-logo-link {
+  position: absolute;
+  z-index: 1;
+  left: 3%;
 }/*# sourceMappingURL=style.css.map */

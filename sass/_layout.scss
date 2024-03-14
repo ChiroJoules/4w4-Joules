@@ -34,6 +34,9 @@ body{
 #menu__entete{
     position : relative;
     background-color: var(--couleur-arriere-menu);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 #entete{
