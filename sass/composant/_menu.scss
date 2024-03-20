@@ -19,20 +19,20 @@ Feuille de style du menu principal
     gap: 0.5rem;
     width: 100vw;
     height: 90%;
-    top: 10%;
+    top: 15%;
     z-index: 1;
     list-style-type: none;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
     transform: translateX(300%);
     transition: transform 0.5s;
     background-color: var(--couleur-arriere-menu);
     @media (min-width: 700px){
       position : static;
       flex-direction: row;
+      width: 75vw;
       justify-content: center;
-      width: 80vw;
-      height: auto;
       transform: translateX(0);
     }
 }
@@ -41,7 +41,7 @@ Feuille de style du menu principal
     display: flex;
     justify-content: center;
     @media (min-width: 700px){
-        display: block;
+        justify-content: flex-end;
     }
 }
 
@@ -87,7 +87,7 @@ Feuille de style du menu principal
 
 .custom-logo-link{
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     @media (min-width: 700px) {
         left: 3%;
     }
