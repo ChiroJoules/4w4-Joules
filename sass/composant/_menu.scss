@@ -18,10 +18,12 @@ Feuille de style du menu principal
     display : flex;
     gap: 0.5rem;
     width: 100vw;
-    right: 0;
+    height: 90%;
+    top: 10%;
     z-index: 1;
     list-style-type: none;
     flex-direction: column;
+    align-items: center;
     transform: translateX(300%);
     transition: transform 0.5s;
     background-color: var(--couleur-arriere-menu);
@@ -29,17 +31,32 @@ Feuille de style du menu principal
       position : static;
       flex-direction: row;
       justify-content: center;
+      width: 80vw;
+      height: auto;
       transform: translateX(0);
     }
 }
 
+.menu-principal-container{
+    display: flex;
+    justify-content: center;
+    @media (min-width: 700px){
+        display: block;
+    }
+}
+
 .menu-item{//li
-    flex: 0 1 150px;
+    flex: 0 1 65px;
+    width: 15rem;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     border: 0.2rem var(--couleur-theme) solid;
+    background-color: var(--couleur-arriere-menu);
+    @media (min-width: 700px){
+        flex: 0 1 150px;
+      }
 }
 
 .menu-item a{//li a
@@ -71,5 +88,15 @@ Feuille de style du menu principal
 .custom-logo-link{
     position: absolute;
     z-index: 1;
-    left: 3%;
+    @media (min-width: 700px) {
+        left: 3%;
+    }
+}
+
+.custom-logo-link > img{
+    width: 4rem;
+    height: auto;
+    @media (min-width: 700px) {
+        width: auto;
+    }
 }
