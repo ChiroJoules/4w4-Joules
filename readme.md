@@ -1,17 +1,23 @@
-# Labo #4
-## Fait par Julian Camilo Gomez Ibanez
-### Création d'un site WP.
-Créer une nouvelle branche « labo4 »
-- Ajouter un menu permettant d'accéder
-    - à vos cinq cours préférés
-    - à chacune des sections de la page
-- Le menu doit être formatter en utilisant 
-  - composant/_menu.scss
-  - Le menu doit être adaptatif et être amovible en    version mobile.
-- Créer le template header.php qui contiendra la    structure d'entête de la page   
-    - qui sera reproduite
-    - dans chacun des modules du thème
-- Créer un template-part qui permettra d'afficher les vagues.
+# TP1 - Club de voyage
+
+# Exercise 2 (5 points)
+- Compléter l'utilisation du mapping de couleur avec boucle et mixin (1 point)
+- Changer le titre et la description (0.2 points)
+- Dans la page d'accueil on voit uniquement les destinations "populaires" 
+- Chaque destination contient les catégories associées.
+  - Améliorer l'apparence de la liste de catégories. (1 point)
+  - Améliorer l'apparence de chacune des cartes. (0.5 points)
+- Afficher des cartes de catégories pour l'ensemble des catégories. (2 points)
+  - Titre de la catégorie.
+  - 10 premers mot de la description.
+  - Un lien permet d'accéder à la liste des destination de cette catégorie.
+  - Le nombre d'article pour cette catégorie.
+- Créer une github-page : index.html. (1 point)
+  - Ajouter l'adresse de la github-page dans votre readme.
+- Dans le readme.md
+  - le nom de l'auteur.
+  - Courte description de votre tp1
+
 
 
 ## Lien vers la page GitHub

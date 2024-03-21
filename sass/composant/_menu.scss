@@ -27,7 +27,7 @@ Feuille de style du menu principal
     flex-wrap: wrap;
     transform: translateX(300%);
     transition: transform 0.5s;
-    background-color: var(--couleur-arriere-menu);
+    //background-color: var(--couleur-arriere-menu);
     @media (min-width: 700px){
       position : static;
       flex-direction: row;
@@ -53,7 +53,7 @@ Feuille de style du menu principal
     align-items: center;
     text-align: center;
     border: 0.2rem var(--couleur-theme) solid;
-    background-color: var(--couleur-arriere-menu);
+    //background-color: var(--couleur-arriere-menu);
     @media (min-width: 700px){
         flex: 0 1 150px;
       }

@@ -10,6 +10,12 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: theme-joules
 */
 /* https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/ */
+/* variable Sass */
+/* palette de couleurs */
+/* A partir des variables de couleurs de la palette choisie
+on un mapping en catégorisant les différentes couleurs,
+Ce map contient un map principal et plusieurs sous-map */
+/* Agencement de couleurs */
 :root {
   /*     --couleur-arriere-entete: #F08700;
       --couleur-arrier-accueil: #F49F0A;
@@ -72,6 +78,156 @@ Text Domain: theme-joules
   --_couleur-arriere-vague: var(--couleur-arriere-footer);
 }
 
+/* Creation des classe de couleur */
+.clr-primaire-100 {
+  color: hsl(220, 100%, 85%);
+}
+
+.bck-primaire-100 {
+  background-color: hsl(220, 100%, 85%);
+}
+
+.clr-primaire-200 {
+  color: hsl(220, 100%, 60%);
+}
+
+.bck-primaire-200 {
+  background-color: hsl(220, 100%, 60%);
+}
+
+.clr-primaire-300 {
+  color: hsl(220, 100%, 30%);
+}
+
+.bck-primaire-300 {
+  background-color: hsl(220, 100%, 30%);
+}
+
+.clr-primaire-400 {
+  color: hsl(220, 100%, 15%);
+}
+
+.bck-primaire-400 {
+  background-color: hsl(220, 100%, 15%);
+}
+
+.clr-secondaire-100 {
+  color: hsl(40, 100%, 85%);
+}
+
+.bck-secondaire-100 {
+  background-color: hsl(40, 100%, 85%);
+}
+
+.clr-secondaire-200 {
+  color: hsl(40, 100%, 50%);
+}
+
+.bck-secondaire-200 {
+  background-color: hsl(40, 100%, 50%);
+}
+
+.clr-secondaire-300 {
+  color: hsl(40, 100%, 30%);
+}
+
+.bck-secondaire-300 {
+  background-color: hsl(40, 100%, 30%);
+}
+
+.clr-secondaire-400 {
+  color: hsl(40, 100%, 15%);
+}
+
+.bck-secondaire-400 {
+  background-color: hsl(40, 100%, 15%);
+}
+
+.clr-ternaire-100 {
+  color: hsl(10, 100%, 85%);
+}
+
+.bck-ternaire-100 {
+  background-color: hsl(10, 100%, 85%);
+}
+
+.clr-ternaire-200 {
+  color: hsl(10, 100%, 50%);
+}
+
+.bck-ternaire-200 {
+  background-color: hsl(10, 100%, 50%);
+}
+
+.clr-ternaire-300 {
+  color: hsl(10, 100%, 30%);
+}
+
+.bck-ternaire-300 {
+  background-color: hsl(10, 100%, 30%);
+}
+
+.clr-ternaire-400 {
+  color: hsl(10, 100%, 15%);
+}
+
+.bck-ternaire-400 {
+  background-color: hsl(10, 100%, 15%);
+}
+
+.clr-vert-100 {
+  color: hsl(70, 100%, 85%);
+}
+
+.bck-vert-100 {
+  background-color: hsl(70, 100%, 85%);
+}
+
+.clr-vert-200 {
+  color: hsl(70, 100%, 50%);
+}
+
+.bck-vert-200 {
+  background-color: hsl(70, 100%, 50%);
+}
+
+.clr-vert-300 {
+  color: hsl(70, 100%, 30%);
+}
+
+.bck-vert-300 {
+  background-color: hsl(70, 100%, 30%);
+}
+
+.clr-vert-400 {
+  color: hsl(70, 100%, 15%);
+}
+
+.bck-vert-400 {
+  background-color: hsl(70, 100%, 15%);
+}
+
+/* Mixin pour agencer des couleurs */
+.clr-agencement-primaire {
+  color: hsl(220, 100%, 85%);
+  background-image: linear-gradient(90deg, hsl(220, 100%, 15%), hsl(220, 100%, 60%));
+}
+
+.clr-agencement-secondaire {
+  color: hsl(40, 100%, 15%);
+  background-color: hsl(40, 100%, 85%);
+}
+
+.clr-agencement-ternaire {
+  color: hsl(10, 100%, 15%);
+  background-color: hsl(10, 100%, 85%);
+}
+
+.clr-agencement-vert {
+  color: hsl(70, 100%, 15%);
+  background-color: hsl(70, 100%, 85%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -107,7 +263,6 @@ body {
 
 #menu__entete {
   position: relative;
-  background-color: var(--couleur-arriere-menu);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -332,7 +487,6 @@ Feuille de style du menu principal
   flex-wrap: wrap;
   transform: translateX(300%);
   transition: transform 0.5s;
-  background-color: var(--couleur-arriere-menu);
 }
 @media (min-width: 700px) {
   .menu {
@@ -362,7 +516,6 @@ Feuille de style du menu principal
   align-items: center;
   text-align: center;
   border: 0.2rem var(--couleur-theme) solid;
-  background-color: var(--couleur-arriere-menu);
 }
 @media (min-width: 700px) {
   .menu-item {
