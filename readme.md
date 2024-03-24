@@ -23,4 +23,4 @@
 ## Lien vers la page GitHub
 https://chirojoules.github.io/4w4-Joules/
 
-### Creer par: Julian Camilo Gomez Ibanez
+### Créé par: Julian Camilo Gomez Ibanez
