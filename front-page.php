@@ -5,7 +5,7 @@
         <h1><?= get_bloginfo("name") ?></h1>
         <h2><?= get_bloginfo("description") ?></h2>
         <h3>TIM-Collège de Maisonneuve</h3>
-        <button>Événements</button>
+        <button class="bck-orange-300">Événements</button>
     </header>
     <div class="vague">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
