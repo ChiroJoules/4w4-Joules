@@ -2,7 +2,7 @@
 
 /* palette de couleurs */
 
-$--clr-bleu-pale    : hsl(220, 100%, 85%);
+$--bleu    : hsl(220, 100%, 85%);
 $--clr-bleu-leger  : hsl(220, 100%, 60%);
 $--clr-bleu-moyen  : hsl(220, 100%, 30%);    
 $--clr-bleu-fonce  : hsl(220, 100%, 15%);
@@ -29,7 +29,7 @@ Ce map contient un map principal et plusieurs sous-map */
 
 $defaut: (
     primaire : (
-        100: $--clr-bleu-pale,
+        100: $--bleu,
         200: $--clr-bleu-leger,
         300: $--clr-bleu-moyen,
         400: $--clr-bleu-fonce
@@ -58,7 +58,7 @@ $defaut: (
 /* Agencement de couleurs */
 
 $agencement-couleur :(
-    primaire: ($--clr-bleu-pale, ($--clr-bleu-fonce, $--clr-bleu-leger)),
+    primaire: ($--bleu, ($--clr-bleu-fonce, $--clr-bleu-leger)),
     secondaire: ($--clr-orange-fonce, $--clr-orange-pale),
     ternaire: ($--clr-rouge-fonce, $--clr-rouge-pale),
     vert: ($--clr-vert-fonce, $--clr-vert-pale)
