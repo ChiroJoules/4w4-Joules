@@ -15,7 +15,7 @@
 </div>
 <div id="accueil" class="global bck-primaire-200">
     <section>
-        <h2>Accueil (h2)</h2>
+        <h2>Nos voyages les plus populaires</h2>
         <div class="destinations">
         <?php if(have_posts()):
                 while(have_posts()): the_post(); ?>
@@ -55,7 +55,7 @@
     <section>
         <h2>Galerie</h2>
         <p>Malesuada fames ac turpis egestas integer eget aliquet nibh. Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Sit amet consectetur adipiscing elit pellentesque habitant morbi. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Scelerisque varius morbi enim nunc faucibus a pellentesque. Orci a scelerisque purus semper eget duis. Pharetra et ultrices neque ornare. Consectetur adipiscing elit pellentesque habitant. Non odio euismod lacinia at quis. A cras semper auctor neque vitae tempus quam.</p>
-        <button>Voir la galérie</button>
+        <button class="bck-orange-300">Voir la galérie</button>
     </section>
     <?php get_template_part('gabarits/vague.php'); ?>
 </div>
