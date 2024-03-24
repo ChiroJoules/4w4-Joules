@@ -9,11 +9,11 @@
     </header>
     <div class="vague">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" style="fill: var(--couleur-arriere-accueil);"></path>
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="remplissage"></path>
         </svg>
     </div>
 </div>
-<div id="accueil" class="global">
+<div id="accueil" class="global bck-primaire-200">
     <section>
         <h2>Accueil (h2)</h2>
         <div class="destinations">
@@ -30,13 +30,13 @@
         </div>
     </section>
 </div>
-<div id="evenement" class="global diagonal">
+<div id="evenement" class="global diagonal bck-primaire-200">
     <section>
         <h2>Événement</h2>
         <p>Turpis tincidunt id aliquet risus. In est ante in nibh mauris cursus mattis molestie a. Augue lacus viverra vitae congue eu consequat ac felis donec. Mi bibendum neque egestas congue quisque egestas. Ut lectus arcu bibendum at varius. Aenean pharetra magna ac placerat vestibulum lectus. A scelerisque purus semper eget. Magna eget est lorem ipsum dolor sit amet consectetur adipiscing. Habitant morbi tristique senectus et netus et malesuada. Sollicitudin tempor id eu nisl nunc. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus. Nec nam aliquam sem et tortor consequat.</p>
     </section>
 </div>
-<div id="galerie" class="global">
+<div id="galerie" class="global bck-primaire-200">
     <section>
         <h2>Galerie</h2>
         <p>Malesuada fames ac turpis egestas integer eget aliquet nibh. Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Sit amet consectetur adipiscing elit pellentesque habitant morbi. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Scelerisque varius morbi enim nunc faucibus a pellentesque. Orci a scelerisque purus semper eget duis. Pharetra et ultrices neque ornare. Consectetur adipiscing elit pellentesque habitant. Non odio euismod lacinia at quis. A cras semper auctor neque vitae tempus quam.</p>

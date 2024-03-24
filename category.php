@@ -1,6 +1,6 @@
 <?php get_header() ?>
 
-<div id="accueil" class="global">
+<div id="accueil" class="global clr-agencement-primaire">
     <section>
         <h2>Destination par catégorie</h2>
         <div class="destinations">
@@ -17,7 +17,7 @@
         </div>
     </section>
 </div>
-<div id="galerie" class="global">
+<div id="galerie" class="global bck-primaire-200">
     <section>
         <h2>Galerie</h2>
         <p>Malesuada fames ac turpis egestas integer eget aliquet nibh. Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Sit amet consectetur adipiscing elit pellentesque habitant morbi. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Scelerisque varius morbi enim nunc faucibus a pellentesque. Orci a scelerisque purus semper eget duis. Pharetra et ultrices neque ornare. Consectetur adipiscing elit pellentesque habitant. Non odio euismod lacinia at quis. A cras semper auctor neque vitae tempus quam.</p>

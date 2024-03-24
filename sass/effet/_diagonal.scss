@@ -12,8 +12,8 @@
     top: 0;
     bottom: 0; */
     inset: 0;
-    background-color: var(--couleur-arriere-diagonal);
+    background-color: hsl(167, 79%, 18%);
     transform: skewY(-5deg);
     z-index: -1;
-    box-shadow: 1px 25px 30px var(--couleur-arriere-footer);
+    box-shadow: 1px 25px 30px hsl(167, 64%, 61%);
 }

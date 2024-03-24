@@ -47,25 +47,21 @@ body{
 }
 
 #accueil{
-    background-color: var(--couleur-arriere-accueil);
     color: var(--couleur-theme);
 }
 
 #evenement{
-    background-color: var(--couleur-arriere-evenement);
     color: var(--couleur-theme);
     z-index: 1;
 }
 
 #galerie{
-    background-color: var(--couleur-arriere-galerie);
     color: var(--couleur-theme);
     position: relative;
 }
 
 #footer{
-    background-color: var(--couleur-arriere-footer);
-    color: var(--couleur-footer);
+    color: var(--couleur-theme);
 }
 
 /* @media only screen and (max-width: 600px){

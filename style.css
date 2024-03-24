@@ -276,25 +276,21 @@ body {
 }
 
 #accueil {
-  background-color: var(--couleur-arriere-accueil);
   color: var(--couleur-theme);
 }
 
 #evenement {
-  background-color: var(--couleur-arriere-evenement);
   color: var(--couleur-theme);
   z-index: 1;
 }
 
 #galerie {
-  background-color: var(--couleur-arriere-galerie);
   color: var(--couleur-theme);
   position: relative;
 }
 
 #footer {
-  background-color: var(--couleur-arriere-footer);
-  color: var(--couleur-footer);
+  color: var(--couleur-theme);
 }
 
 /* @media only screen and (max-width: 600px){
@@ -410,7 +406,7 @@ a:visited {
 }
 
 .vague .remplissage {
-  fill: var(--_couleur-arriere-vague);
+  fill: hsl(167, 57%, 37%);
 }
 
 .diagonal {
@@ -427,10 +423,10 @@ a:visited {
      top: 0;
      bottom: 0; */
   inset: 0;
-  background-color: var(--couleur-arriere-diagonal);
+  background-color: hsl(167, 79%, 18%);
   transform: skewY(-5deg);
   z-index: -1;
-  box-shadow: 1px 25px 30px var(--couleur-arriere-footer);
+  box-shadow: 1px 25px 30px hsl(167, 64%, 61%);
 }
 
 /* ////////////////////////////////////////////// */
