@@ -37,7 +37,7 @@
                         <h3><?= $category->name ?></h3>
                         <p><?= wp_trim_words($category->description, 10) ?></p>
                         <p>Nombre d'articles dans la catégorie: <?= $category->count; ?></p>
-                        <a href="<?= get_category_link($category->term_id) ?>">Voir la catégorie -></a>
+                        <button class="bouton-carte bck-primaire-200"><a href="<?= get_category_link($category->term_id) ?>">Voir la catégorie -></a></button>
                     </div>
                 <?php endforeach;
             ?>

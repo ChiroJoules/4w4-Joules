@@ -13,7 +13,7 @@
                         <h5><?= get_the_title() ?></h5>
                         <p><?= wp_trim_words(get_the_content(), 10); ?></p>
                         <?= the_category();  ?>
-                        <a href="<?php the_permalink(); ?>">Voir l'article -></a>
+                        <button class="bouton-carte bck-primaire-200"><a href="<?php the_permalink(); ?>">Voir l'article -></a></button>
                     </div>
                     <?php endwhile; ?> 
                 <?php endif; ?>     
