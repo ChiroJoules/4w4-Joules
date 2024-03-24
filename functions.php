@@ -26,5 +26,21 @@ function _4w4_modifie_requete_principal( $query ) {
      }
      add_action( 'pre_get_posts', '_4w4_modifie_requete_principal' );
 
+     function modifier_titre_par_Categorie($titre, $separator, $sep_location) {
+        // Check if it's a category page
+        if (is_category()) {
+            // Get the category object
+            $category = get_queried_object();
+            
+            // Get category name
+            $category_name = $category->name;
+            
+            // Modify the titre
+            $titre = "Destination arranged by $category_name $separator";
+        }
+        return $titre;
+    }
+    add_filter('wp_title', 'modify_category_page_title', 10, 3);
+
 
 ?>

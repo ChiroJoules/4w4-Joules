@@ -2,7 +2,10 @@
 
 <div id="accueil" class="global clr-agencement-primaire">
     <section>
-        <h2>Destination par :</h2>
+        <?php
+            $category = single_cat_title('', false);
+            echo "<h2>Destination arrange par: $category</h2>";
+        ?>
         <div class="destinations">
             <?php if(have_posts()):
                 while(have_posts()): the_post(); ?>

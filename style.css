@@ -192,11 +192,11 @@ Ce map contient un map principal et plusieurs sous-map */
 }
 
 .clr-orange-300 {
-  color: hsl(40, 100%, 30%);
+  color: hsl(29, 67%, 50%);
 }
 
 .bck-orange-300 {
-  background-color: hsl(40, 100%, 30%);
+  background-color: hsl(29, 67%, 50%);
 }
 
 .clr-orange-400 {
@@ -386,7 +386,7 @@ a:focus {
 }
 
 a:visited {
-  color: hsl(220, 100%, 15%);
+  color: hsl(29, 67%, 50%);
 }
 
 .vague {
@@ -507,7 +507,7 @@ Feuille de style du menu principal
     flex-direction: row;
     align-items: center;
     border: 0.2rem solid;
-    box-shadow: 0px 8px 15px 5px #A35262;
+    box-shadow: 0px 8px 15px 5px hsl(347, 47%, 52%);
     border-radius: 40px;
   }
 }
