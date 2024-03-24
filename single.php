@@ -6,7 +6,7 @@
         <h2>Accueil (h2)</h2>
         <div class="cours">
             <?php if(have_posts()): the_post() ?>
-                    <div class="carte">
+                    <div class="carte bck-primaire-300">
                         <h2><?= get_the_title(); ?></h2>
                         <p><?= get_the_content(); ?></p>
                     </div>

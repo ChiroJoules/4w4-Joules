@@ -1,10 +1,11 @@
 a{
-    color: var(--couleur-lien);
+    color: hsl(40, 100%, 50%);
     transition: all 0.5s;
 }
 
 a:hover{
-    background-color: var(--couleur-lien-hover);
+    background-color: hsl(347, 47%, 52%);
+    transform: scale(110%);
 }
 
 a:focus{
@@ -12,5 +13,5 @@ a:focus{
 }
 
 a:visited{
-    color: var(--couleur-lien-visited);
+    color: hsl(220, 100%, 15%);
 }

@@ -2,11 +2,11 @@
 
 <div id="accueil" class="global clr-agencement-primaire">
     <section>
-        <h2>Destination par catégorie</h2>
+        <h2>Destination par :</h2>
         <div class="destinations">
             <?php if(have_posts()):
                 while(have_posts()): the_post(); ?>
-                    <div class="carte">
+                    <div class="carte bck-primaire-300">
                         <h5><?= get_the_title() ?></h5>
                         <p><?= wp_trim_words(get_the_content(), 10); ?></p>
                         <?= the_category();  ?>

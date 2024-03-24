@@ -10,16 +10,22 @@
     flex-direction: column;
     justify-content: center;
     flex: 1 0 calc(900px/5);
-    border: 1px solid var(--couleur-theme);
     text-align: center;
     align-items: center;
-    background-color: var(--couleur-arriere);
     padding: 1rem;
+    box-shadow: inset 0px 0px 8px 5px hsla(167, 57%, 37%, 0.5);
+}
+
+.carte:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s;
 }
 
 .post-categories{ // ul de la liste des catégories
     display: flex;
     list-style-type: none;
     gap: 0.5rem;
-
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
 }

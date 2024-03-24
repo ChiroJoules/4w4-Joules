@@ -112,99 +112,99 @@ Ce map contient un map principal et plusieurs sous-map */
 }
 
 .clr-secondaire-100 {
-  color: hsl(40, 100%, 85%);
+  color: hsl(347, 39%, 32%);
 }
 
 .bck-secondaire-100 {
-  background-color: hsl(40, 100%, 85%);
+  background-color: hsl(347, 39%, 32%);
 }
 
 .clr-secondaire-200 {
-  color: hsl(40, 100%, 50%);
+  color: hsl(347, 47%, 52%);
 }
 
 .bck-secondaire-200 {
-  background-color: hsl(40, 100%, 50%);
+  background-color: hsl(347, 47%, 52%);
 }
 
 .clr-secondaire-300 {
-  color: hsl(40, 100%, 30%);
+  color: hsl(347, 77%, 22%);
 }
 
 .bck-secondaire-300 {
-  background-color: hsl(40, 100%, 30%);
+  background-color: hsl(347, 77%, 22%);
 }
 
 .clr-secondaire-400 {
-  color: hsl(40, 100%, 15%);
+  color: hsl(347, 98%, 16%);
 }
 
 .bck-secondaire-400 {
-  background-color: hsl(40, 100%, 15%);
+  background-color: hsl(347, 98%, 16%);
 }
 
 .clr-ternaire-100 {
-  color: hsl(10, 100%, 85%);
+  color: hsl(220, 100%, 85%);
 }
 
 .bck-ternaire-100 {
-  background-color: hsl(10, 100%, 85%);
+  background-color: hsl(220, 100%, 85%);
 }
 
 .clr-ternaire-200 {
-  color: hsl(10, 100%, 50%);
+  color: hsl(220, 100%, 60%);
 }
 
 .bck-ternaire-200 {
-  background-color: hsl(10, 100%, 50%);
+  background-color: hsl(220, 100%, 60%);
 }
 
 .clr-ternaire-300 {
-  color: hsl(10, 100%, 30%);
+  color: hsl(220, 100%, 30%);
 }
 
 .bck-ternaire-300 {
-  background-color: hsl(10, 100%, 30%);
+  background-color: hsl(220, 100%, 30%);
 }
 
 .clr-ternaire-400 {
-  color: hsl(10, 100%, 15%);
+  color: hsl(220, 100%, 15%);
 }
 
 .bck-ternaire-400 {
-  background-color: hsl(10, 100%, 15%);
+  background-color: hsl(220, 100%, 15%);
 }
 
-.clr-vert-100 {
-  color: hsl(167, 50%, 52%);
+.clr-orange-100 {
+  color: hsl(40, 100%, 85%);
 }
 
-.bck-vert-100 {
-  background-color: hsl(167, 50%, 52%);
+.bck-orange-100 {
+  background-color: hsl(40, 100%, 85%);
 }
 
-.clr-vert-200 {
-  color: hsl(167, 57%, 37%);
+.clr-orange-200 {
+  color: hsl(40, 100%, 50%);
 }
 
-.bck-vert-200 {
-  background-color: hsl(167, 57%, 37%);
+.bck-orange-200 {
+  background-color: hsl(40, 100%, 50%);
 }
 
-.clr-vert-300 {
-  color: hsl(167, 79%, 18%);
+.clr-orange-300 {
+  color: hsl(40, 100%, 30%);
 }
 
-.bck-vert-300 {
-  background-color: hsl(167, 79%, 18%);
+.bck-orange-300 {
+  background-color: hsl(40, 100%, 30%);
 }
 
-.clr-vert-400 {
-  color: hsl(167, 76%, 13%);
+.clr-orange-400 {
+  color: hsl(40, 100%, 15%);
 }
 
-.bck-vert-400 {
-  background-color: hsl(167, 76%, 13%);
+.bck-orange-400 {
+  background-color: hsl(40, 100%, 15%);
 }
 
 /* Mixin pour agencer des couleurs */
@@ -219,8 +219,8 @@ Ce map contient un map principal et plusieurs sous-map */
 }
 
 .clr-agencement-ternaire {
-  color: hsl(10, 100%, 15%);
-  background-color: hsl(10, 100%, 85%);
+  color: hsl(347, 98%, 16%);
+  background-color: hsl(347, 39%, 32%);
 }
 
 .clr-agencement-vert {
@@ -317,7 +317,7 @@ h1 {
 
 h2 {
   font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
-  margin: 1rem 0;
+  margin: 3rem 0;
 }
 
 h3 {
@@ -372,12 +372,13 @@ button:hover {
 }
 
 a {
-  color: var(--couleur-lien);
+  color: hsl(40, 100%, 50%);
   transition: all 0.5s;
 }
 
 a:hover {
-  background-color: var(--couleur-lien-hover);
+  background-color: hsl(347, 47%, 52%);
+  transform: scale(110%);
 }
 
 a:focus {
@@ -385,7 +386,7 @@ a:focus {
 }
 
 a:visited {
-  color: var(--couleur-lien-visited);
+  color: hsl(220, 100%, 15%);
 }
 
 .vague {
@@ -444,17 +445,24 @@ a:visited {
   flex-direction: column;
   justify-content: center;
   flex: 1 0 180px;
-  border: 1px solid var(--couleur-theme);
   text-align: center;
   align-items: center;
-  background-color: var(--couleur-arriere);
   padding: 1rem;
+  box-shadow: inset 0px 0px 8px 5px hsla(167, 57%, 37%, 0.5);
+}
+
+.carte:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s;
 }
 
 .post-categories {
   display: flex;
   list-style-type: none;
   gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
 }
 
 /* <nav class="menu-principal-container"><ul id="menu-principal" class="menu"><li id="menu-item-34" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34"><a href="#accueil">Accueil</a></li>

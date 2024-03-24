@@ -19,14 +19,29 @@
         <div class="destinations">
         <?php if(have_posts()):
                 while(have_posts()): the_post(); ?>
-                    <div class="carte">
-                        <h5><?= get_the_title() ?></h5>
+                    <div class="carte bck-primaire-300">
+                        <h3><?= get_the_title() ?></h3>
                         <p><?= wp_trim_words(get_the_content(), 10); ?></p>
                         <?= the_category();  ?>
                         <a href="<?php the_permalink(); ?>">Voir l'article -></a>
                     </div>
                     <?php endwhile; ?> 
-                <?php endif; ?>     
+                <?php endif; ?>
+        </div>
+        <h2>Les catégories</h2>
+        <div class="destinations">
+            <?php
+                $categories = get_categories();
+                foreach($categories as $category): ?>
+                    <div class="carte bck-primaire-300">
+                        <h3><?= $category->name ?></h3>
+                        <p><?= wp_trim_words($category->description, 10) ?></p>
+                        <p>Nombre d'articles dans la catégorie: <?= $category->count; ?></p>
+                        <a href="<?= get_category_link($category->term_id) ?>">Voir la catégorie -></a>
+                    </div>
+                <?php endforeach;
+            ?>
+        
         </div>
     </section>
 </div>

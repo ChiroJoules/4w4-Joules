@@ -13,10 +13,10 @@ $--clr-orange-leger  : hsl(40, 100%, 50%);
 $--clr-orange-moyen  : hsl(40, 100%, 30%);
 $--clr-orange-fonce  : hsl(40, 100%, 15%);
 
-$--clr-rouge-pale   : hsl(10, 100%, 85%);
-$--clr-rouge-leger  : hsl(10, 100%, 50%);
-$--clr-rouge-moyen  : hsl(10, 100%, 30%);
-$--clr-rouge-fonce  : hsl(10, 100%, 15%);
+$--clr-rouge-pale   : hsl(347, 39%, 32%);
+$--clr-rouge-leger  : hsl(347, 47%, 52%);
+$--clr-rouge-moyen  : hsl(347, 77%, 22%);
+$--clr-rouge-fonce  : hsl(347, 98%, 16%);
 
 $--clr-vert-pale   : hsl(167, 50%, 52%);
 $--clr-vert-leger  : hsl(167, 57%, 37%);
@@ -35,22 +35,22 @@ $defaut: (
         400: $--clr-vert-fonce
     ),
     secondaire : (
-        100: $--clr-orange-pale,
-        200: $--clr-orange-leger,
-        300: $--clr-orange-moyen,
-        400: $--clr-orange-fonce
-    ),
-    ternaire : (
         100: $--clr-rouge-pale,
         200: $--clr-rouge-leger,
         300: $--clr-rouge-moyen,
         400: $--clr-rouge-fonce
     ),
-    vert : (
-        100: $--clr-vert-pale,
-        200: $--clr-vert-leger,
-        300: $--clr-vert-moyen,
-        400: $--clr-vert-fonce
+    ternaire : (
+        100: $--clr-bleu-pale,
+        200: $--clr-bleu-leger,
+        300: $--clr-bleu-moyen,
+        400: $--clr-bleu-fonce
+    ),
+    orange : (
+        100: $--clr-orange-pale,
+        200: $--clr-orange-leger,
+        300: $--clr-orange-moyen,
+        400: $--clr-orange-fonce
     )
 );
 
