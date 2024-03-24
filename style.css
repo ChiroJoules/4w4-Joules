@@ -366,6 +366,11 @@ button:hover {
   transform: scale(105%);
 }
 
+.bouton-carte {
+  margin: 1rem 0rem;
+  padding: 1rem;
+}
+
 a {
   color: hsl(40, 100%, 50%);
   transition: all 0.5s;
