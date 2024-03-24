@@ -2,26 +2,26 @@
 
 /* palette de couleurs */
 
-$--bleu    : hsl(220, 100%, 85%);
+$--clr-bleu-pale   : hsl(220, 100%, 85%);
 $--clr-bleu-leger  : hsl(220, 100%, 60%);
 $--clr-bleu-moyen  : hsl(220, 100%, 30%);    
 $--clr-bleu-fonce  : hsl(220, 100%, 15%);
 
 
-$--clr-orange-pale: hsl(40, 100%, 85%);
+$--clr-orange-pale  : hsl(40, 100%, 85%);
 $--clr-orange-leger  : hsl(40, 100%, 50%);
 $--clr-orange-moyen  : hsl(40, 100%, 30%);
 $--clr-orange-fonce  : hsl(40, 100%, 15%);
 
-$--clr-rouge-pale: hsl(10, 100%, 85%);
+$--clr-rouge-pale   : hsl(10, 100%, 85%);
 $--clr-rouge-leger  : hsl(10, 100%, 50%);
 $--clr-rouge-moyen  : hsl(10, 100%, 30%);
 $--clr-rouge-fonce  : hsl(10, 100%, 15%);
 
-$--clr-vert-pale: hsl(70, 100%, 85%);
-$--clr-vert-leger  : hsl(70, 100%, 50%);
-$--clr-vert-moyen  : hsl(70, 100%, 30%);
-$--clr-vert-fonce  : hsl(70, 100%, 15%);
+$--clr-vert-pale   : hsl(167, 50%, 52%);
+$--clr-vert-leger  : hsl(167, 57%, 37%);
+$--clr-vert-moyen  : hsl(167, 79%, 18%);
+$--clr-vert-fonce  : hsl(167, 76%, 13%);
 
 /* A partir des variables de couleurs de la palette choisie
 on un mapping en catégorisant les différentes couleurs,
@@ -29,10 +29,10 @@ Ce map contient un map principal et plusieurs sous-map */
 
 $defaut: (
     primaire : (
-        100: $--bleu,
-        200: $--clr-bleu-leger,
-        300: $--clr-bleu-moyen,
-        400: $--clr-bleu-fonce
+        100: $--clr-vert-pale,
+        200: $--clr-vert-leger,
+        300: $--clr-vert-moyen,
+        400: $--clr-vert-fonce
     ),
     secondaire : (
         100: $--clr-orange-pale,
@@ -58,7 +58,7 @@ $defaut: (
 /* Agencement de couleurs */
 
 $agencement-couleur :(
-    primaire: ($--bleu, ($--clr-bleu-fonce, $--clr-bleu-leger)),
+    primaire: ($--clr-vert-pale, ($--clr-vert-moyen, $--clr-vert-fonce)),
     secondaire: ($--clr-orange-fonce, $--clr-orange-pale),
     ternaire: ($--clr-rouge-fonce, $--clr-rouge-pale),
     vert: ($--clr-vert-fonce, $--clr-vert-pale)

@@ -14,7 +14,7 @@ Feuille de style du menu principal
 
 
 .menu { //ul
-    position: fixed;
+/*     position: fixed;
     display : flex;
     gap: 0.5rem;
     width: 100vw;
@@ -34,30 +34,41 @@ Feuille de style du menu principal
       width: 75vw;
       justify-content: center;
       transform: translateX(0);
+    } */
+
+    @media (min-width: 700px){
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center; 
+        border: 0.2rem solid;
+        box-shadow: 0px 8px 15px 5px #A35262;
+        border-radius: 40px;
     }
+
 }
 
-.menu-principal-container{
+/* .menu-principal-container{
     display: flex;
     justify-content: center;
     @media (min-width: 700px){
         justify-content: flex-end;
     }
-}
+} */
 
 .menu-item{//li
     flex: 0 1 65px;
-    width: 15rem;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 0.2rem var(--couleur-theme) solid;
     //background-color: var(--couleur-arriere-menu);
     @media (min-width: 700px){
-        flex: 0 1 150px;
-      }
-}
+        flex: 1 1 135px;
+        height: 3rem;
+        padding: 0.5rem;
+    }
+} 
 
 .menu-item a{//li a
     color: aliceblue;
@@ -86,17 +97,12 @@ Feuille de style du menu principal
 }
 
 .custom-logo-link{
-    position: absolute;
+    //position: absolute;
     z-index: 2;
-    @media (min-width: 700px) {
-        left: 3%;
-    }
 }
 
 .custom-logo-link > img{
-    width: 4rem;
+    padding: 1.5rem;
+    width: 5rem;
     height: auto;
-    @media (min-width: 700px) {
-        width: auto;
-    }
 }

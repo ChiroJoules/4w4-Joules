@@ -1,6 +1,6 @@
 <?php get_header() ?>
 
-<div id="entete" class="global">
+<div id="entete" class="global clr-agencement-primaire">
     <header class="entete__header">
         <h1><?= get_bloginfo("name") ?></h1>
         <h2><?= get_bloginfo("description") ?></h2>
@@ -17,7 +17,7 @@
     <section>
         <h2>Accueil (h2)</h2>
         <div class="destinations">
-            <?php if(have_posts()):
+        <?php if(have_posts()):
                 while(have_posts()): the_post(); ?>
                     <div class="carte">
                         <h5><?= get_the_title() ?></h5>

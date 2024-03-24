@@ -80,35 +80,35 @@ Ce map contient un map principal et plusieurs sous-map */
 
 /* Creation des classe de couleur */
 .clr-primaire-100 {
-  color: hsl(220, 100%, 85%);
+  color: hsl(167, 50%, 52%);
 }
 
 .bck-primaire-100 {
-  background-color: hsl(220, 100%, 85%);
+  background-color: hsl(167, 50%, 52%);
 }
 
 .clr-primaire-200 {
-  color: hsl(220, 100%, 60%);
+  color: hsl(167, 57%, 37%);
 }
 
 .bck-primaire-200 {
-  background-color: hsl(220, 100%, 60%);
+  background-color: hsl(167, 57%, 37%);
 }
 
 .clr-primaire-300 {
-  color: hsl(220, 100%, 30%);
+  color: hsl(167, 79%, 18%);
 }
 
 .bck-primaire-300 {
-  background-color: hsl(220, 100%, 30%);
+  background-color: hsl(167, 79%, 18%);
 }
 
 .clr-primaire-400 {
-  color: hsl(220, 100%, 15%);
+  color: hsl(167, 76%, 13%);
 }
 
 .bck-primaire-400 {
-  background-color: hsl(220, 100%, 15%);
+  background-color: hsl(167, 76%, 13%);
 }
 
 .clr-secondaire-100 {
@@ -176,41 +176,41 @@ Ce map contient un map principal et plusieurs sous-map */
 }
 
 .clr-vert-100 {
-  color: hsl(70, 100%, 85%);
+  color: hsl(167, 50%, 52%);
 }
 
 .bck-vert-100 {
-  background-color: hsl(70, 100%, 85%);
+  background-color: hsl(167, 50%, 52%);
 }
 
 .clr-vert-200 {
-  color: hsl(70, 100%, 50%);
+  color: hsl(167, 57%, 37%);
 }
 
 .bck-vert-200 {
-  background-color: hsl(70, 100%, 50%);
+  background-color: hsl(167, 57%, 37%);
 }
 
 .clr-vert-300 {
-  color: hsl(70, 100%, 30%);
+  color: hsl(167, 79%, 18%);
 }
 
 .bck-vert-300 {
-  background-color: hsl(70, 100%, 30%);
+  background-color: hsl(167, 79%, 18%);
 }
 
 .clr-vert-400 {
-  color: hsl(70, 100%, 15%);
+  color: hsl(167, 76%, 13%);
 }
 
 .bck-vert-400 {
-  background-color: hsl(70, 100%, 15%);
+  background-color: hsl(167, 76%, 13%);
 }
 
 /* Mixin pour agencer des couleurs */
 .clr-agencement-primaire {
-  color: hsl(220, 100%, 85%);
-  background-image: linear-gradient(90deg, hsl(220, 100%, 15%), hsl(220, 100%, 60%));
+  color: hsl(167, 50%, 52%);
+  background-image: linear-gradient(90deg, hsl(167, 79%, 18%), hsl(167, 76%, 13%));
 }
 
 .clr-agencement-secondaire {
@@ -224,8 +224,8 @@ Ce map contient un map principal et plusieurs sous-map */
 }
 
 .clr-agencement-vert {
-  color: hsl(70, 100%, 15%);
-  background-color: hsl(70, 100%, 85%);
+  color: hsl(167, 76%, 13%);
+  background-color: hsl(167, 50%, 52%);
 }
 
 * {
@@ -474,52 +474,59 @@ Feuille de style du menu principal
     //background-color: black;
 } */
 .menu {
-  position: fixed;
-  display: flex;
-  gap: 0.5rem;
-  width: 100vw;
-  height: 90%;
-  top: 15%;
-  z-index: 1;
-  list-style-type: none;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-  transform: translateX(300%);
-  transition: transform 0.5s;
+  /*     position: fixed;
+      display : flex;
+      gap: 0.5rem;
+      width: 100vw;
+      height: 90%;
+      top: 15%;
+      z-index: 1;
+      list-style-type: none;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      transform: translateX(300%);
+      transition: transform 0.5s;
+      //background-color: var(--couleur-arriere-menu);
+      @media (min-width: 700px){
+        position : static;
+        flex-direction: row;
+        width: 75vw;
+        justify-content: center;
+        transform: translateX(0);
+      } */
 }
 @media (min-width: 700px) {
   .menu {
-    position: static;
+    width: 100%;
+    display: flex;
     flex-direction: row;
-    width: 75vw;
+    align-items: center;
+    border: 0.2rem solid;
+    box-shadow: 0px 8px 15px 5px #A35262;
+    border-radius: 40px;
+  }
+}
+
+/* .menu-principal-container{
+    display: flex;
     justify-content: center;
-    transform: translateX(0);
-  }
-}
-
-.menu-principal-container {
-  display: flex;
-  justify-content: center;
-}
-@media (min-width: 700px) {
-  .menu-principal-container {
-    justify-content: flex-end;
-  }
-}
-
+    @media (min-width: 700px){
+        justify-content: flex-end;
+    }
+} */
 .menu-item {
   flex: 0 1 65px;
-  width: 15rem;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border: 0.2rem var(--couleur-theme) solid;
 }
 @media (min-width: 700px) {
   .menu-item {
-    flex: 0 1 150px;
+    flex: 1 1 135px;
+    height: 3rem;
+    padding: 0.5rem;
   }
 }
 
@@ -551,21 +558,11 @@ Feuille de style du menu principal
 }
 
 .custom-logo-link {
-  position: absolute;
   z-index: 2;
-}
-@media (min-width: 700px) {
-  .custom-logo-link {
-    left: 3%;
-  }
 }
 
 .custom-logo-link > img {
-  width: 4rem;
+  padding: 1.5rem;
+  width: 5rem;
   height: auto;
-}
-@media (min-width: 700px) {
-  .custom-logo-link > img {
-    width: auto;
-  }
 }/*# sourceMappingURL=style.css.map */
